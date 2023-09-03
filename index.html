@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODECRAFT PROJECT</title>
+    <style>
+        
+        body {
+            margin-left: 50px;
+            margin-right: 50px;
+            display: inline-flex;
+            height: 2159px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+        
+       
+        .hero-section {
+            width: 1440px;
+            height: 2159px;
+            flex-shrink: 0;
+            background: #000;
+        }
+        
+       
+        .nav-bar {
+            margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 166px;
+        }
+
+      
+        .left-div {
+            display: flex;
+            width: 465px;
+            height: 70px;
+            padding: 6px 32px 6px 6px;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            border-radius: 290px;
+            background: #1C1C1C;
+        }
+
+       
+        .nav-option {
+            width: 59px;
+            height: 16px;
+            flex-shrink: 0;
+            color: #FFF;
+            text-align: center;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+      
+        .right-div {
+            display: inline-flex;
+            align-items: center;
+            gap: 166px;
+        }
+
+       
+        .join-button {
+            display: flex;
+            padding: 14px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            border-radius: 40px;
+            background: #E75F00;
+        }
+
+        
+        .button-text {
+            color: #FFF;
+            text-align: center;
+            font-family: Sansation, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+      
+.bgimage {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  background-image: url('background2.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+    display: flex;
+    justify-content: space-between;
+   /* align-items: center;*/
+}
+
+
+.left-top-div {
+    width: 608px;
+    height: 249px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.upper-sub-div {
+    width: 608px;
+    height: 156px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.upper-sub-div-text-bold {
+    color: #E75F00;
+    font-family: Inter, sans-serif;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.lower-sub-div {
+    width: 574px;
+    height: 46px;
+    flex-shrink: 0;
+    font-size: 2rem;
+    margin-top: 32px;
+    color: #837b7b;
+    font-family: Inter, sans-serif;
+}
+
+.right-top-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.right-top-div-content {
+    width: 409px;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    opacity: 0.8;
+}
+
+
+.search-bar-frame {
+    display: flex;
+    width: 352px;
+    height: 47px;
+    padding: 12px 176px 13px 52px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #1C1C1C;
+}
+
+.search-bar-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar-button {
+    background: transparent;
+    border: none;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.lastgrp {
+    width: 700px;
+    height: 1000px;
+    flex-shrink: 0;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.bigger-child {
+    width: 650px;
+    height: 377px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inside-child-upper {
+    width: 623px;
+    height: 156px;
+    flex-shrink: 0;
+    color: #E75F00;
+    font-family: Inter, sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.inside-child-upper .text-part2 {
+    color: rgba(255, 255, 252, 0.65);
+    font-weight: 400;
+}
+
+
+.text-below {
+    width: 541px;
+    height: 46px;
+    flex-shrink: 0;
+    color: rgba(255, 255, 252, 0.65);
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+
+.button1,
+.button2 {
+    margin-right: 10px;
+    width: 200px;
+    height: 63px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #E75F00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button1:hover,
+.button2:hover {
+    background: #FF7F00;
+}
+
+.button-content1,
+.button-content2 {
+    width: 128px;
+    height: 23px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ellipse-group {
+    width: 750px;
+    height: 469px;
+    flex-shrink: 0;
+    fill: rgba(217, 217, 217, 0.00);
+    stroke-width: 3px;
+    stroke: rgba(255, 255, 255, 0.45);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.navbar {
+        display: inline-block;
+        font-size: 20px;
+        margin-top: 13px;
+        margin-bottom: 12px;
+        margin-left: 100px;
+        text-decoration: none;
+        border: 2px gray solid;
+        background-color: #1c1c1c;
+        border-radius: 50px;
+        padding: 20px;
+      }
+      .nav_ele {
+        text-decoration: none;
+        color: white;
+        padding: 0px 25px;
+      }
+      .logo {
+        height: 45px;
+        width: 45px;
+        float: right;
+        padding: 10px 10px;
+        margin-top: 15px;
+      } 
+     
+.nav-option:hover {
+    color: #E75F00; 
+}
+
+
+.join-button:hover {
+    background: #FF7F00; 
+}
+
+
+.logo:hover {
+    opacity: 0.8; 
+}
+
+
+.search-bar-frame:hover .search-bar-input {
+    background-color: #1C1C1C; 
+    transition: background-color 0.3s ease;
+}
+
+/*body::before {
+    content: "WELCOME";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background: linear-gradient(75deg, #E75F00, #000000);
+    color: #FFF;
+    animation: welcomeAnimation 3s ease-in-out forwards;
+    z-index: 9999;
+}*/
+
+/*@keyframes welcomeAnimation {
+    0% {
+        transform: scale(3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1C1C1C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #E75F00;
+    color: white;
+}
+
+
+.nav-option.home:hover .dropdown-content {
+    display: block;
+}
+
+
+.rotation-container {
+    position: fixed;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #c57410b1;
+    transform-origin: center bottom;
+    animation: rotateLetter 5s linear infinite; 
+}
+
+
+@keyframes rotateLetter {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.footer {
+    background-color: #888;
+    color: #fff; 
+    text-align: center;
+    padding: 10px 0;
+
+
+.footer p {
+    margin: 0;
+}
+
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+       
+        <header>
+        <div class="nav-bar">
+            
+            <div class="left-div">
+                <div class="nav-option home">Home</div>
+                <div class="nav-option">Projects</div>
+                <div class="nav-option">Events</div>
+                <div class="nav-option">Contact</div>
+            </div>
+            
+            <div class="right-div">
+                <div class="join-button" title="You Will Be Redirected to the bio link of the website">
+                    <div class="button-text">JOIN NOW</div>
+                </div>
+            </div>
+            
+        </div>
+          <span id="logo">
+            <a href="https://github.com" target="_blank"><img src="github.png" alt="GitHub" class="logo" title="You Will Be Redirected to GITHUB website"></a>
+            <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook" class="logo" title="You Will Be Redirected to Facebook Page "></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram" class="logo" title="You Will Be Redirected to Instagram page"></a>
+        </span>
+        
+    </header>
+
+        
+        <div class="bgimage">
+            
+            
+            <div class="left-top-div">
+                
+                <div class="upper-sub-div">
+                    <div class="upper-sub-div-text">Welcome To
+                        <span class="upper-sub-div-text-bold">Hackerspace</span>
+                        
+                    </div>
+                    <div class="upper-sub-div-text-large">
+                        
+                </div>
+                
+                <div class="lower-sub-div">
+                    Coding Community of MSIT
+                    </div>
+                   
+                </div>
+            </div>
+
+            
+            <div class="right-top-div">
+                <div class="right-top-div-content">
+                    <p>Dive into the realm where lines of code weave dreams into reality and innovation knows no bounds. Welcome to Hackerspace, your launchpad to explore, create, and collaborate in the world of coding like never before.</p>
+                </div>
+
+               
+                <div class="search-bar-frame">
+                    <img src="https://www.freeiconspng.com/uploads/search-icon-png-2.png" alt="Search Icon" width="20" height="20">
+                    <input type="text" placeholder="Search..." class="search-bar-input">
+                    <button class="search-bar-button"></button>
+                </div>
+            </div>
+        </div>
+
+        
+
+<div class="lastgrp">
+    
+    <div class="bigger-child">
+        
+        <div class="inside-child-upper">
+            <span class="text-part1">Web Development<br> </span>
+            <span class="text-part2"> is no more difficult</span>
+        </div>
+        <br> <br> <br>
+        
+        <div class="text-below">
+            Become Zero to Hero coder
+        </div>
+        
+        
+        <div class="buttons">
+            
+            <button class="button1" title="You can contact us here">
+                <span class="button-content1">Contact Us</span>
+            </button>
+            
+            
+            <button class="button2" title="Know the details of our webpage">
+                <span class="button-content2">Learn more</span>
+            </button>
+        </div>
+    </div>
+
+    
+ <div class="ellipse-group">
+    
+    <img src="logo circle.jpg" alt="Image Description" width="500" height="500">
+ </div>
+
+ 
+</div>
+
+<div class="rotation-container">
+    <span><div class="letter">   -W-   </div></span>
+    <span><div class="letter">   -D-   </div></span>
+</div>
+
+<script>
+   
+
+document.querySelector('.nav-option.home .dropdown-content').addEventListener('click', function(e) {
+    if (e.target && e.target.nodeName === 'A') {
+        const option = e.target.textContent;
+        if (option === 'Contact Us') {
+            
+            scrollToBiggerChild('Contact Us');
+        } else if (option === 'Learn More') {
+           
+            scrollToBiggerChild('Learn More');
+        }
+    }
+});
+
+function scrollToBiggerChild(section) {
+    const biggerChild = document.querySelector('.bigger-child');
+    if (section === 'Contact Us') {
+        biggerChild.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else if (section === 'Learn More') {
+        biggerChild.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+</script>
+
+<footer class="footer">
+    <p>Terms and Conditions Applied</p>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
